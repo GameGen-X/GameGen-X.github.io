@@ -82,6 +82,37 @@
     }
 </style>
 
+<style>
+    .highlight_2 {
+        text-align: center;
+        font-size: 20;
+        /* font-weight: bold; */
+    }
+
+    .highlight_2 b {
+        background: linear-gradient(90deg, #ff8c00, #cf056a, #8a2be2);
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: gradient 5s infinite;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .highlight_2 b.glow {
+        text-shadow: 0 0 10px rgba(255, 140, 0, 0.8), 0 0 20px rgba(255, 0, 128, 0.062), 0 0 30px rgba(138, 43, 226, 0.8);
+    }
+</style>
+
 <body>
     <div class="content">
       <h1><strong><span class="highlight">GameGen-X</span>: Open-world Video Game Generation</strong></h1>
@@ -97,7 +128,7 @@
       </div>
               <p style="text-align: center;">
                 <a href="https://arxiv.org/pdf/2411.00769" target="_blank">[Arxiv]</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://github.com/3a2077/GameGen-X" target="_blank">[Github]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/GameGen-X/GameGen-X" target="_blank">[Github]</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://3a2077.github.io/" target="_blank">[Galleray]</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="" target="_blank">[Huggingface space]</a> &nbsp;&nbsp;&nbsp;&nbsp;
               </p>
@@ -105,7 +136,6 @@
               For any inquiries, please email to: hche@ust.hk, qdliu0226@gmail.com.
               </p>
         </font>
-
         <div class="videoContainer">
           <div class="videoWrapper">
               <video class="video_big" controls>
@@ -115,8 +145,9 @@
               <div class="label">Overview of GameGen-X Functionality </div> 
               <p class="center-italic">
                 Part I for the basic functionality showcase, and Part II for the key features of GameGen-X (0:47). <br>
-                The GameGen-X is a game content foundation model capable of generating <b>creative and infinitely long</b> game videos with <b> AAA game quality</b>, <b>multiple high resolutions</b>,  <b>20 FPS real-time control at 320p</b>, and <b>open-domain generalization</b>. 
             </p>
+            <p class="highlight_2">TL;DR: The GameGen-X is a game content foundation model capable of generating <b class="glow">creative and infinitely long</b> game videos with <b class="glow">AAA game quality</b>, <b class="glow">multiple high resolutions</b>, <b class="glow">20 FPS real-time control at 320p</b>, and <b class="glow">open-domain generalization</b>.</p>
+
         </div>
     </div>
    
