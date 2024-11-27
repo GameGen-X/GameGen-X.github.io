@@ -68,6 +68,20 @@
 </style>
 </head>
 
+<style>
+    .videoContainer_2 {
+        display: flex;
+        justify-content: space-between; /* 水平居中 */
+    }
+    .videoWrapper_2 {
+        flex: 1; /* 均分空间 */
+        margin: 5px; /* 可选：添加一些外边距 */
+    }
+    .video_big_2 {
+        width: 100%; /* 让视频宽度占满其容器 */
+    }
+</style>
+
 <body>
     <div class="content">
       <h1><strong><span class="highlight">GameGen-X</span>: Open-world Video Game Generation</strong></h1>
@@ -91,6 +105,7 @@
               For any inquiries, please email to: hche@ust.hk, qdliu0226@gmail.com.
               </p>
         </font>
+
         <div class="videoContainer">
           <div class="videoWrapper">
               <video class="video_big" controls>
@@ -101,23 +116,26 @@
               <p class="center-italic">
                 Part I for the basic functionality showcase, and Part II for the key features of GameGen-X (0:47).
             </p>
-
-          <div class="videoWrapper">
-              <video class="video" controls>
-                  <source src="https://github.com/3a2077/3a2077.github.io/raw/main/videos/OGameGen_PV.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-              </video>
-              <div class="label">Demo Shouted out to "Journey to the West"</div>
-          </div>
-
-          <div class="videoWrapper">
-            <video class="video" controls>
-                <source src="https://github.com/3a2077/3a2077.github.io/raw/main/videos/400streamingdemo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="label">"Infinite" Generation with Control Signals</div>
-
         </div>
+
+        
+        <div class="videoContainer_2">
+            <div class="videoWrapper_2">
+                <video class="video_big_2" controls>
+                    <source src="https://github.com/3a2077/3a2077.github.io/raw/main/videos/OGameGen_PV.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="label">Demo Shouted out to "Journey to the West"</div>
+            </div>
+            <div class="videoWrapper_2">
+                <video class="video_big_2" controls>
+                    <source src="https://github.com/3a2077/3a2077.github.io/raw/main/videos/400streamingdemo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="label">"Infinite" Generation with Control Signals</div>
+            </div>
+        </div>
+
       </div>
       </div>
 

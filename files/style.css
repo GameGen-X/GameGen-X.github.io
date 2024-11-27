@@ -673,6 +673,7 @@ p code {
   margin: 20px 0; /* 为每个视频添加上下间距 */
 }
 
+
 .video_big {
   width: 100%; /* 使视频占满父容器宽度 */
   height: auto;
@@ -680,12 +681,14 @@ p code {
   border-radius: 5px; /* 视频圆角，可选 */
 }
 
+
 .video {
   width: 500px; /* 根据需要调整视频宽度 */
   height: auto;
   border: 2px solid #000; /* 视频边框，可选 */
   border-radius: 5px; /* 视频圆角，可选 */
 }
+
 
 .video_data {
   width: 1000px; /* 根据需要调整视频宽度 */
