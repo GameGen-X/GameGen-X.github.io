@@ -298,20 +298,25 @@
 <div class="content">
   <h2 style="text-align:center;">Abstract</h2>
   <p>
-    We introduce <b>GameGen-X</b>, the first diffusion transformer model specifically designed for both generating and interactively controlling open-world game videos. 
+    We introduce GameGen-X, the first diffusion transformer model specifically designed for both generating and interactively controlling open-world game videos.
     This model facilitates high-quality, open-domain generation by simulating an extensive array of game engine features, such as innovative characters, dynamic environments, complex actions, and diverse events. 
-    Additionally, it provides interactive controllability, predicting and altering future content based on the current clip, thus allowing for gameplay simulation.
-    To realize this vision, we first collected and built an Open-World Video Game Dataset (<b>OGameData</b>) from scratch. 
-    It is the first and largest dataset for open-world game video generation and control. 
-    It comprises over one million diverse gameplay video clips sampling from over 150 games with informative captions empowered by GPT-4o.
-    GameGen-X undergoes a two-stage training process, consisting of foundation model pre-training and instruction tuning. 
-    First, the model was pre-trained via text-to-video generation and video continuation, endowing it with the capability for open-domain game video generation. 
-    Further, to achieve interactive controllability, we designed InstructNet to incorporate game-related multi-modal control signal experts.
-    This novel design allows the model to adjust latent representations based on user inputs, unifying character interaction and scene content control for the first time.
-    During the tuning, the pre-trained foundation model is frozen, and InstructNet enables the controllable production of subsequent frames. 
-    GameGen-X represents a significant leap forward in open-world video game design using generative models. 
-    It demonstrates the potential of generative models to serve as auxiliary tools to traditional rendering techniques, effectively merging creative generation with interactive capabilities.
-    The project will be released at <a href="https://github.com//GameGen-X/GameGen-X">https://github.com//GameGen-X/GameGen-X
+    Additionally, it provides interactive controllability, predicting and altering future content based on the current clip,
+    thus allowing for gameplay simulation. To realize this vision, we first collected
+    and built an Open-World Video Game Dataset (OGameData) from scratch. It is the
+    first and largest dataset for open-world game video generation and control, which
+    comprises over one million diverse gameplay video clips with informative captions from GPT-4o. GameGen-X undergoes a two-stage training process, consisting of pre-training and instruction tuning. Firstly, the model was pre-trained via
+    text-to-video generation and video continuation, endowing it with the capability
+    for long-sequence, high-quality open-domain game video generation. Further, to
+    achieve interactive controllability, we designed InstructNet to incorporate gamerelated multi-modal control signal experts. This allows the model to adjust latent
+    representations based on user inputs, unifying character interaction, and scene
+    content control for the first time in video generation. During instruction tuning,
+    only the InstructNet is updated while the pre-trained foundation model is frozen,
+    enabling the integration of interactive controllability without loss of diversity and
+    quality of generated content. GameGen-X represents a significant leap forward in
+    open-world game design using generative models. It demonstrates the potential of
+    generative models to serve as auxiliary tools to traditional rendering techniques,
+    effectively merging creative generation with interactive capabilities. The project
+    will be available at https://github.com/GameGen-X/GameGen-X.
     </a>
   </p>
 </div>
